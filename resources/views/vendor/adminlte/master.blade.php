@@ -35,6 +35,7 @@
     @else
         <link rel="stylesheet" href="{{ mix(config('adminlte.laravel_mix_css_path', 'css/app.css')) }}">
     @endif
+    <link rel="stylesheet" href="{{ asset('css/main.css') }}">
 
     {{-- Livewire Styles --}}
     @if(config('adminlte.livewire'))
@@ -103,6 +104,18 @@
 
     {{-- Custom Scripts --}}
     @yield('adminlte_js')
+    <script>
+        const config = {
+            token: $('meta[name="csrf-token"]').attr('content'),
+            pagination: $('meta[name="pagination"]').attr('content')
+        }
+    </script>
+
+    <script src="{{ asset('js/datatable.js') }}"></script>
+    <script src="{{ asset('js/main.js') }}"></script>
+    @toastr_js
+    @toastr_render
+
 
 </body>
 
