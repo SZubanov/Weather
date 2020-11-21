@@ -7,7 +7,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -126,8 +126,10 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="D:/Programs/OpenServer/domains/hhtest-master" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -146,6 +148,7 @@
       <option name="presentableId" value="Default" />
       <updated>1605943301262</updated>
       <workItem from="1605943303231" duration="3972000" />
+      <workItem from="1605947959470" duration="4497000" />
     </task>
     <servers />
   </component>
@@ -153,9 +156,29 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="552" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605958696729">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="552" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1605958696729" />
+    <state x="740" y="295" key="FileChooserDialogImpl" timestamp="1605950930580">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="740" y="295" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1605950930580" />
+    <state x="739" y="384" key="cloudConfig.PluginsDialog" timestamp="1605958803142">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="739" y="384" key="cloudConfig.PluginsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1605958803142" />
+    <state x="832" y="384" key="cloudConfig.SelfSettingsDialog" timestamp="1605958796266">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="832" y="384" key="cloudConfig.SelfSettingsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1605958796266" />
     <state x="777" y="229" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1605944730380">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="777" y="229" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1605944730380" />
+    <state x="615" y="250" key="run.anything.popup" timestamp="1605948206485">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="615" y="250" key="run.anything.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1605948206485" />
   </component>
 </project>

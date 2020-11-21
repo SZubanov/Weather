@@ -18,10 +18,13 @@ services:
     networks:
       - weather
 
+  #Mysql Service
   db:
     image: mysql:5.7
     container_name: weather-db
     restart: unless-stopped
+    ports:
+      - 3306:3306
     environment:
       MYSQL_DATABASE: ${DB_DATABASE}
       MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
@@ -34,6 +37,7 @@ services:
     networks:
       - weather
 
+  #Server Service
   nginx:
     image: nginx:alpine
     container_name: weather-nginx
