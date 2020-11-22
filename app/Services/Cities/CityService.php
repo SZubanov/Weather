@@ -52,6 +52,11 @@ class CityService extends ModelService
                 'data' => 'name',
             ],
             [
+                'data' => 'weather_info',
+                'sortable' => false,
+                'searchable' => false,
+            ],
+            [
                 'data' => 'action',
                 'sortable' => false,
                 'searchable' => false,
@@ -66,7 +71,20 @@ class CityService extends ModelService
         $query = $this->queryForTable($params);
         return $this->makeDatatable($query)
             ->addColumn('action', fn($city) => view('admin.cities.datatable.action', ['city' => $city]))
+            ->addColumn('weather_info', function ($city) {
+                if (!is_null($city->weather_info)) {
+                    $weather = json_decode($city->weather_info);
+                    $weather = round($weather->main->temp - 273.15, 0);
+                    return $weather . ' °C';
+                }
+            })
             ->rawColumns(['action'])
             ->make(true);
+    }
+
+    public function parseCities()
+    {
+        $fileContent = file_get_contents(public_path().'/city.list.json');
+        dd($fileContent);
     }
 }

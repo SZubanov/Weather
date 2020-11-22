@@ -8,7 +8,7 @@
                     <div class="row">
                         <div class="col">
                             <a href="{{ route('cities.create') }}" class="btn btn-sm btn-primary">
-                                Добавить
+                                @lang('cities.index.create')
                             </a>
                         </div>
                         <div class="card-tools">

@@ -89,6 +89,26 @@ Model = {
 
         Model.ajax_request(form.action, data, form.method, success, error)
     }
-}
+};
 
+Weather = {
+    get: function (url) {
+        Main.preloaderShow();
+        let data =  {_method: 'POST', _token: config.token};
+        let success = function (data) {
+            if (data['action'] === 'success') {
+               DatatableHelper.reload('table');
+            }
+            Main.preloaderShow();
+
+        }
+
+        var error = function (data) {
+                toastr.error(data.responseText);
+                Main.preloaderShow();
+         };
+
+        Model.ajax_request(url, data, 'POST', success, error)
+    }
+}
 
