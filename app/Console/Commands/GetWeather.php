@@ -8,6 +8,7 @@ use App\Models\Cities\City;
 use App\Services\Weather\WeatherService;
 use GuzzleHttp\Exception\GuzzleException;
 use Illuminate\Console\Command;
+use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Support\Facades\Log;
 
 class GetWeather extends Command
@@ -43,7 +44,7 @@ class GetWeather extends Command
     {
         foreach ($this->getCities() as $city) {
             try {
-                echo 'Получаю информацию о погоде города' . $city->name.PHP_EOL;
+                echo 'Получаю информацию о погоде города ' . $city->name.PHP_EOL;
                 $city->update(['weather_info' => $this->service->getByName($city->name)->getContents()]);
             } catch (GuzzleException $error) {
                 echo 'Ошибка при получении информации о погоде города' . $city->name.PHP_EOL;
@@ -55,7 +56,7 @@ class GetWeather extends Command
         return true;
     }
 
-    public function getCities()
+    public function getCities(): Collection
     {
         return City::get();
     }

@@ -7,7 +7,11 @@ namespace App\Http\Controllers\Weather;
 use App\Http\Controllers\Controller;
 use App\Models\Cities\City;
 use App\Services\Weather\WeatherService as Service;
+use Illuminate\Contracts\Foundation\Application;
+use Illuminate\Contracts\Routing\ResponseFactory;
+use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
 
 class WeatherController extends Controller
 {
@@ -16,6 +20,10 @@ class WeatherController extends Controller
         parent::__construct($service);
     }
 
+    /**
+     * @param City $city
+     * @return Application|ResponseFactory|JsonResponse|Response
+     */
     public function getWeatherCity(City $city)
     {
         try {
