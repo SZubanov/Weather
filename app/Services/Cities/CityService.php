@@ -81,10 +81,4 @@ class CityService extends ModelService
             ->rawColumns(['action'])
             ->make(true);
     }
-
-    public function parseCities()
-    {
-        $fileContent = file_get_contents(public_path().'/city.list.json');
-        dd($fileContent);
-    }
 }
