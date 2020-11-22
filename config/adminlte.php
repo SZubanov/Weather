@@ -238,6 +238,12 @@ return [
             'icon_color'  => 'orange',
             'active'      => ['users', 'regex:@^users/[0-9]+$@', 'regex:@^users/[A-z]+$@', 'regex:@^users/[0-9]+/[A-z]+$@']
         ],
+        [
+            'text'        => 'settings',
+            'route'       => 'settings.weather.index',
+            'icon'        => 'fas fa-fw fa-cogs',
+            'icon_color'  => 'white',
+        ],
     ],
 
     /*

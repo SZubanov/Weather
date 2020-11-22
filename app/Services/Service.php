@@ -5,11 +5,11 @@ declare(strict_types=1);
 namespace App\Services;
 
 
-use App\Services\Traits\DatatableTrait;
+use App\Services\Traits\Datatable;
 
 class Service
 {
-    use DatatableTrait;
+    use Datatable;
 
     public function getDataForIndex(): array
     {

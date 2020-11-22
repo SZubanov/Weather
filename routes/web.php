@@ -1,6 +1,9 @@
 <?php
 
+declare(strict_types=1);
+
 use App\Http\Controllers\Users\UserController;
+use App\Http\Controllers\Settings\WeatherSettingController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -23,4 +26,6 @@ Route::group(['middleware' => ['auth']], function () {
     })->name('home');
 
     Route::resource('users', UserController::class)->except(['show']);
+    Route::get('index', [WeatherSettingController::class, 'index'])->name('settings.weather.index');
+    Route::put('index/{settings}', [WeatherSettingController::class, 'update'])->name('settings.weather.update');
 });
