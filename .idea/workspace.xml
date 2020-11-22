@@ -23,12 +23,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dc20670d-8162-467d-b461-ebdbe21b5a35" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/WeatherController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/WeatherController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,7 +176,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/admin/tests/api" />
+    <property name="last_opened_file_path" value="D:/Programs/OpenServer/domains/hhtest-master" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
@@ -260,10 +256,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="690" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1606063055133" />
-    <state x="693" y="212" key="FileChooserDialogImpl" timestamp="1606039939543">
+    <state x="693" y="212" key="FileChooserDialogImpl" timestamp="1606071073544">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="693" y="212" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1606039939543" />
+    <state x="693" y="212" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1606071073544" />
     <state x="706" y="263" key="NewPhpClassDialog" timestamp="1606063039926">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
