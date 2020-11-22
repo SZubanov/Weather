@@ -42,10 +42,4 @@ class WeatherService extends Service
     {
         return $this->request(['q' => $city]);
     }
-
-    public function getById($id): StreamInterface
-    {
-        return $this->request(['id' => $id]);
-    }
-
 }
