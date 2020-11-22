@@ -231,13 +231,13 @@ return [
     */
 
     'menu' => [
-//        [
-//            'text'        => 'pages',
-//            'url'         => 'admin/pages',
-//            'icon'        => 'far fa-fw fa-file',
-//            'label'       => 4,
-//            'label_color' => 'success',
-//        ],
+        [
+            'text'        => 'users',
+            'route'       => 'users.index',
+            'icon'        => 'fas fa-fw fa-users',
+            'icon_color'  => 'orange',
+            'active'      => ['users', 'regex:@^users/[0-9]+$@', 'regex:@^users/[A-z]+$@', 'regex:@^users/[0-9]+/[A-z]+$@']
+        ],
     ],
 
     /*
@@ -331,6 +331,23 @@ return [
                 ],
             ],
         ],
+        [
+            'name' => 'Toaster',
+            'active' => true,
+            'files' => [
+                [
+                    'type' => 'css',
+                    'asset' => true,
+                    'location' => 'vendor/toastr/css/toastr.min.css',
+                ],
+                [
+                    'type' => 'js',
+                    'asset' => true,
+                    'location' => 'vendor/toastr/js/toastr.min.js',
+                ],
+            ],
+        ],
+
     ],
 
     /*

@@ -5,10 +5,17 @@ declare(strict_types=1);
 namespace App\Http\Controllers;
 
 use App\Http\Resources\BaseResource;
+use App\Services\Service;
+use Illuminate\Contracts\Foundation\Application;
+use Illuminate\Contracts\View\Factory;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
+use Illuminate\Http\JsonResponse;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Routing\Controller as BaseController;
+use Illuminate\View\View;
 
 class Controller extends BaseController
 {
@@ -17,14 +24,15 @@ class Controller extends BaseController
     protected string $templatePath = 'admin.';
 
     protected Service $service;
-    protected BaseResource $resource;
 
-    public function __construct(Service $service, BaseResource $resource = null)
+    public function __construct(Service $service)
     {
         $this->service = $service;
-        $this->setResource($resource);
     }
 
+    /**
+     * @return View|JsonResponse
+     */
     public function index()
     {
         $request = request();
@@ -36,18 +44,38 @@ class Controller extends BaseController
         return $this->getView(__FUNCTION__, $this->service->getDataForIndex());
     }
 
-    public function create()
+    public function create(): View
     {
         return $this->getView(__FUNCTION__, $this->service->getDataForCreate());
+    }
+
+    public function storeElement(array $request): RedirectResponse
+    {
+        $this->service->store($request);
+        toastr()->success(__('answer.create'));
+        return redirect()->route('users.index');
+    }
+
+    public function editElement(Model $model): View
+    {
+        return $this->getView('create', $this->service->getDataForEdit($model));
+    }
+
+
+    public function updateElement(array $request, Model $model): RedirectResponse
+    {
+        $this->service->update($request, $model);
+        toastr()->success(__('answer.update'));
+        return redirect()->back();
     }
 
     /**
      * Вернуть страницу
      * @param string $view - Путь до шаблона после $this->templatePath
      * @param array $params - Массив с данными для шаблона
-     * @return View
+     * @return Application|Factory|View
      */
-    protected function getView(string $view, array $params = []): View
+    protected function getView(string $view, array $params = [])
     {
         $common = [
             'title' => $params['title'] ?? $this->getTitle(),
@@ -73,25 +101,5 @@ class Controller extends BaseController
     protected function getRouteName(): string
     {
         return \Request::route()->getName();
-    }
-
-    /**
-     * Добавить ресурс
-     *
-     * @param BaseResource|null $resource
-     */
-    private function setResource(BaseResource $resource = null)
-    {
-        $this->resource = !is_null($resource) ? $resource : app(BaseResource::class);
-    }
-
-    /**
-     * Вернуть ресурс
-     *
-     * @return BaseResource
-     */
-    public function getResource()
-    {
-        return $this->resource;
     }
 }

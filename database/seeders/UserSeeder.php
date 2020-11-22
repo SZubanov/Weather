@@ -21,7 +21,7 @@ class UserSeeder extends Seeder
            'email' => 'user@weather.ru'
         ],
         [
-            'name' => 'User',
+            'name' => 'user@weather.ru',
             'password' => Hash::make('password')
         ]);
     }

@@ -9,8 +9,8 @@ DatatableHelper = {
 
         const swalWithBootstrapButtons = Swal.mixin({
             customClass: {
-                confirmButton: 'btn btn-success',
-                cancelButton: 'btn btn-danger'
+                confirmButton: 'btn btn-success m-1',
+                cancelButton: 'btn btn-danger m-1'
             },
             buttonsStyling: false
         })
@@ -78,13 +78,21 @@ DatatableHelper = {
 
     create: function (table) {
         const datatable = table.dataTable({
-            width: '100%',
+            // width: '100%',
             pageLength: config.pagination,
             processing: true,
             serverSide: true,
             scrollX: true,
             fixedColumns: true,
+            stateSave: true,
             order: [table.data('order') != undefined? table.data('order'):[1,'asc']],
+            buttons: [
+                {
+                    extend: 'colvis',
+                    text: 'Настройки таблицы',
+                },
+            ],
+            // sDom: '<"float-right"B><"top">rt<"bottom"p><"clear">',
             sDom: 'tr<"bottom"p>',
             columns: table.data('columns'),
             ajax: {

@@ -62,6 +62,11 @@ class ModelService extends Service
         return $this->model->create($data);
     }
 
+    public function update(array $data, Model $model): bool
+    {
+        return $model->update($data);
+    }
+
     /**
      * @param array $params - массив с фильтрами
      * @return Builder
