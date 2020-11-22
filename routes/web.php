@@ -7,6 +7,7 @@ use App\Http\Controllers\Settings\WeatherSettingController;
 use App\Http\Controllers\Cities\CityController;
 use App\Http\Controllers\Weather\WeatherController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Test\ApiTestController;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,4 +33,5 @@ Route::group(['middleware' => ['auth']], function () {
     Route::get('index', [WeatherSettingController::class, 'index'])->name('settings.weather.index');
     Route::put('index/{settings}', [WeatherSettingController::class, 'update'])->name('settings.weather.update');
     Route::post('weather/get/{city}', [WeatherController::class, 'getWeatherCity'])->name('weathers.get');
+    Route::get('test/api', [ApiTestController::class, 'index'])->name('test.api.index');
 });

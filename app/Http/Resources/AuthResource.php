@@ -6,7 +6,7 @@ namespace App\Http\Resources;
 
 use Illuminate\Http\Resources\Json\JsonResource;
 
-class BaseResource extends JsonResource
+class AuthResource extends JsonResource
 {
     /**
      * Transform the resource into an array.
@@ -16,6 +16,8 @@ class BaseResource extends JsonResource
      */
     public function toArray($request)
     {
-        return parent::toArray($request);
+        return [
+            'token' => $this->api_token,
+        ];
     }
 }
