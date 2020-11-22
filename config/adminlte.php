@@ -232,6 +232,13 @@ return [
 
     'menu' => [
         [
+            'text'        => 'cities',
+            'route'       => 'cities.index',
+            'icon'        => 'fas fa-fw fa-city',
+            'icon_color'  => 'orange',
+            'active'      => ['cities', 'regex:@^cities/[0-9]+$@', 'regex:@^cities/[A-z]+$@', 'regex:@^cities/[0-9]+/[A-z]+$@']
+        ],
+        [
             'text'        => 'users',
             'route'       => 'users.index',
             'icon'        => 'fas fa-fw fa-users',
