@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -20,14 +23,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dc20670d-8162-467d-b461-ebdbe21b5a35" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/weather.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/weather.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Users/UserController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Users/StoreRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Users/UpdateRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Observers/Users/UserObserver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/Users/UserService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/datatables/css/buttons.bootstrap4.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/datatables/css/dataTables.bootstrap4.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/toastr/css/toastr.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/toastr/css/toastr.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/toastr/js/toastr.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/toastr/js/toastr.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/lang/ru/answer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/lang/ru/users.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/lang/ru/validation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/users/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/users/datatable/action.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/users/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/ModelService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/ModelService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/adminlte.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/adminlte.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/UserSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/UserSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/datatable.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/datatable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/datatables/buttons.bootstrap4.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/datatables/js/buttons.bootstrap4.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/datatables/buttons.colVis.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/datatables/js/buttons.colVis.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/datatables/dataTables.bootstrap4.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/datatables/js/dataTables.bootstrap4.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/datatables/dataTables.bootstrap4.min.js:Zone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/datatables/dataTables.buttons.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/datatables/js/dataTables.buttons.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/datatables/jquery.dataTables.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/datatables/js/jquery.dataTables.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/datatables/jquery.dataTables.min.js:Zone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/vendor/adminlte/ru/menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/vendor/adminlte/ru/menu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/includes/buttons-form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/includes/buttons-form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/includes/datatable.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/includes/datatable.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,7 +69,20 @@
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="dev" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
@@ -152,6 +195,10 @@
       <path value="$PROJECT_DIR$/vendor/almasaeed2010/adminlte" />
       <path value="$PROJECT_DIR$/vendor/jeroennoten/laravel-adminlte" />
       <path value="$PROJECT_DIR$/vendor/laravel/ui" />
+      <path value="$PROJECT_DIR$/vendor/yajra/laravel-datatables-oracle" />
+      <path value="$PROJECT_DIR$/vendor/laravelcollective/html" />
+      <path value="$PROJECT_DIR$/vendor/yajra/laravel-datatables-html" />
+      <path value="$PROJECT_DIR$/vendor/yoeunes/toastr" />
     </include_path>
   </component>
   <component name="ProjectId" id="1kaengos7gER9BWsUNo1CmclHUn" />
@@ -164,8 +211,17 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="D:/Programs/OpenServer/domains/hhtest-master" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="\\wsl$\Ubuntu\home\zubatik\weather\resources\views\admin\users" />
+      <recent name="\\wsl$\Ubuntu\home\zubatik\weather\public\vendor\datatables\js" />
+      <recent name="\\wsl$\Ubuntu\home\zubatik\weather\app\Services" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -174,6 +230,9 @@
     </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\serge\AppData\Roaming\Subversion</configuration>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="dc20670d-8162-467d-b461-ebdbe21b5a35" name="Default Changelist" comment="" />
@@ -190,17 +249,46 @@
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="586" y="218" key="#Inspections" timestamp="1605976677091">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="586" y="218" key="#Inspections/0.0.1920.1080@0.0.1920.1080" timestamp="1605976677091" />
     <state x="552" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605962215020">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="552" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1605962215020" />
-    <state x="740" y="295" key="FileChooserDialogImpl" timestamp="1605950930580">
+    <state x="690" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605986339464">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="740" y="295" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1605950930580" />
+    <state x="690" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1605986339464" />
+    <state x="740" y="295" key="FileChooserDialogImpl" timestamp="1605980805311">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="740" y="295" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1605980805311" />
+    <state x="706" y="263" key="NewPhpClassDialog" timestamp="1605985785024">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="706" y="263" key="NewPhpClassDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1605985785024" />
+    <state x="794" y="463" key="NewPhpFileDialog" timestamp="1605985551541">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="794" y="463" key="NewPhpFileDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1605985551541" />
+    <state x="461" y="185" key="SettingsEditor" timestamp="1605976305445">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="461" y="185" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1605976305445" />
     <state x="739" y="384" key="cloudConfig.PluginsDialog" timestamp="1605958803142">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -213,13 +301,13 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="777" y="229" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1605944730380" />
-    <state x="615" y="250" key="run.anything.popup" timestamp="1605948206485">
+    <state x="615" y="250" key="run.anything.popup" timestamp="1605976628997">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="615" y="250" key="run.anything.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1605948206485" />
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1605961512920">
+    <state x="615" y="250" key="run.anything.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1605976628997" />
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1606027599704">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1605961512920" />
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1606027599704" />
   </component>
 </project>

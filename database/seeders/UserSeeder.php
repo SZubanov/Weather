@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Database\Seeders;
 
 use App\Models\User;
@@ -19,7 +21,7 @@ class UserSeeder extends Seeder
            'email' => 'user@weather.ru'
         ],
         [
-            'name' => 'User',
+            'name' => 'user@weather.ru',
             'password' => Hash::make('password')
         ]);
     }
