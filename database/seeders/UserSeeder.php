@@ -22,7 +22,7 @@ class UserSeeder extends Seeder
         ],
         [
             'name' => 'user@weather.ru',
-            'password' => Hash::make('password')
+            'password' => 'password'
         ]);
     }
 }

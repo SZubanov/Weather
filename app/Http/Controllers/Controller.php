@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace App\Http\Controllers;
 
-use App\Http\Resources\BaseResource;
 use App\Services\Service;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\View\Factory;
@@ -33,7 +32,7 @@ class Controller extends BaseController
     /**
      * @return View|JsonResponse
      */
-    public function index()
+    protected function index()
     {
         $request = request();
 
@@ -44,25 +43,24 @@ class Controller extends BaseController
         return $this->getView(__FUNCTION__, $this->service->getDataForIndex());
     }
 
-    public function create(): View
+    protected function createElement(): View
     {
-        return $this->getView(__FUNCTION__, $this->service->getDataForCreate());
+        return $this->getView('create', $this->service->getDataForCreate());
     }
 
-    public function storeElement(array $request): RedirectResponse
+    protected function storeElement(array $request): void
     {
         $this->service->store($request);
         toastr()->success(__('answer.create'));
-        return redirect()->route('users.index');
     }
 
-    public function editElement(Model $model): View
+    protected function editElement(Model $model): View
     {
         return $this->getView('create', $this->service->getDataForEdit($model));
     }
 
 
-    public function updateElement(array $request, Model $model): RedirectResponse
+    protected function updateElement(array $request, Model $model): RedirectResponse
     {
         $this->service->update($request, $model);
         toastr()->success(__('answer.update'));

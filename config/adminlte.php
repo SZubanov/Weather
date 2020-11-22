@@ -232,11 +232,30 @@ return [
 
     'menu' => [
         [
+            'text'        => 'cities',
+            'route'       => 'cities.index',
+            'icon'        => 'fas fa-fw fa-city',
+            'icon_color'  => 'orange',
+            'active'      => ['cities', 'regex:@^cities/[0-9]+$@', 'regex:@^cities/[A-z]+$@', 'regex:@^cities/[0-9]+/[A-z]+$@']
+        ],
+        [
             'text'        => 'users',
             'route'       => 'users.index',
             'icon'        => 'fas fa-fw fa-users',
             'icon_color'  => 'orange',
             'active'      => ['users', 'regex:@^users/[0-9]+$@', 'regex:@^users/[A-z]+$@', 'regex:@^users/[0-9]+/[A-z]+$@']
+        ],
+        [
+            'text'        => 'settings',
+            'route'       => 'settings.weather.index',
+            'icon'        => 'fas fa-fw fa-cogs',
+            'icon_color'  => 'white',
+        ],
+        [
+            'text'        => 'api_test',
+            'route'       => 'test.api.index',
+            'icon'        => 'fas fa-fw fa-question-circle',
+            'icon_color'  => 'green',
         ],
     ],
 

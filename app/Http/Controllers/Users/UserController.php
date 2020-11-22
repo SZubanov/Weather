@@ -22,9 +22,15 @@ class UserController extends Controller
         parent::__construct($service);
     }
 
+    public function create(): View
+    {
+        return $this->createElement();
+    }
+
     public function store(StoreRequest $request): RedirectResponse
     {
-        return $this->storeElement($request->validated());
+        $this->storeElement($request->validated());
+        return redirect()->route('users.index');
     }
 
     public function edit(User $user): View

@@ -89,6 +89,75 @@ Model = {
 
         Model.ajax_request(form.action, data, form.method, success, error)
     }
-}
+};
 
+Weather = {
+    get: function (url) {
+        Main.preloaderShow();
+        let data =  {_method: 'POST', _token: config.token};
+        let success = function (data) {
+            if (data['action'] === 'success') {
+               DatatableHelper.reload('table');
+            }
+            Main.preloaderShow();
+
+        }
+
+        var error = function (data) {
+                toastr.error(data.responseText);
+                Main.preloaderShow();
+         };
+
+        Model.ajax_request(url, data, 'POST', success, error)
+    }
+};
+
+ApiTest = {
+    login: function (url) {
+        let email = $('[name="email"]').val();
+        let password = $('[name="password"]').val();
+
+        let data =  {email: email, password: password};
+
+        let success = function (data) {
+            let str = JSON.stringify(data, undefined, 4);
+            document.getElementById('result').innerHTML = str;
+        }
+
+        let error = function (data) {
+            let str = JSON.stringify(data, undefined, 4);
+            document.getElementById('result').innerHTML = str;
+        };
+
+        Model.ajax_request(url, data, 'POST', success, error)
+    },
+
+    weather: function (url) {
+
+        let token = $('[name="token"]').val();
+
+        let success = function (data) {
+            let str = JSON.stringify(data, undefined, 4);
+            document.getElementById('result').innerHTML = str;
+        }
+
+        let error = function (data) {
+            let str = JSON.stringify(data, undefined, 4);
+            document.getElementById('result').innerHTML = str;
+        };
+
+        $.ajax({
+            type: 'GET',
+            url: url,
+            headers: {
+                "X-Requested-With": "XMLHttpRequest",
+                "token": token
+            },
+            cache: false,
+            dataType: 'json',
+            success: success,
+            error: error
+        });
+    }
+}
 

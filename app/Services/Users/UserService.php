@@ -9,6 +9,7 @@ use App\Models\User;
 use App\Services\ModelService;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\JsonResponse;
+use Illuminate\Support\Str;
 
 class UserService extends ModelService
 {
@@ -72,6 +73,16 @@ class UserService extends ModelService
             ->addColumn('action', fn($user) => view('admin.users.datatable.action', ['user' => $user]))
             ->rawColumns(['action'])
             ->make(true);
+    }
+
+    public function setToken(User $user): User
+    {
+        $token = Str::random(80);
+        $user->forceFill([
+            'api_token' =>  hash('sha256', $token),
+        ])->save();
+
+        return $user;
     }
 
 
