@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace App\Http\Controllers;
 
-use App\Http\Resources\BaseResource;
 use App\Services\Service;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\View\Factory;
@@ -49,11 +48,10 @@ class Controller extends BaseController
         return $this->getView(__FUNCTION__, $this->service->getDataForCreate());
     }
 
-    public function storeElement(array $request): RedirectResponse
+    public function storeElement(array $request): void
     {
         $this->service->store($request);
         toastr()->success(__('answer.create'));
-        return redirect()->route('users.index');
     }
 
     public function editElement(Model $model): View
