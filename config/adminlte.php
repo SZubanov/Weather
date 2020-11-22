@@ -251,6 +251,12 @@ return [
             'icon'        => 'fas fa-fw fa-cogs',
             'icon_color'  => 'white',
         ],
+        [
+            'text'        => 'api_test',
+            'route'       => 'test.api.index',
+            'icon'        => 'fas fa-fw fa-question-circle',
+            'icon_color'  => 'green',
+        ],
     ],
 
     /*

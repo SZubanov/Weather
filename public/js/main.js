@@ -110,5 +110,54 @@ Weather = {
 
         Model.ajax_request(url, data, 'POST', success, error)
     }
+};
+
+ApiTest = {
+    login: function (url) {
+        let email = $('[name="email"]').val();
+        let password = $('[name="password"]').val();
+
+        let data =  {email: email, password: password};
+
+        let success = function (data) {
+            let str = JSON.stringify(data, undefined, 4);
+            document.getElementById('result').innerHTML = str;
+        }
+
+        let error = function (data) {
+            let str = JSON.stringify(data, undefined, 4);
+            document.getElementById('result').innerHTML = str;
+        };
+
+        Model.ajax_request(url, data, 'POST', success, error)
+    },
+
+    weather: function (url) {
+
+        let token = $('[name="token"]').val();
+
+        let success = function (data) {
+            let str = JSON.stringify(data, undefined, 4);
+            document.getElementById('result').innerHTML = str;
+        }
+
+        let error = function (data) {
+            let str = JSON.stringify(data, undefined, 4);
+            document.getElementById('result').innerHTML = str;
+        };
+
+        $.ajax({
+            type: 'GET',
+            url: url,
+            headers: {
+                "X-Requested-With": "XMLHttpRequest",
+                "token": token
+            },
+            cache: false,
+            dataType: 'json',
+            success: success,
+            error: error
+        });
+    }
 }
 
