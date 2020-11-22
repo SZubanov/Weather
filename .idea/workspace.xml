@@ -23,9 +23,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dc20670d-8162-467d-b461-ebdbe21b5a35" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/UserSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/UserSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Service.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/Service.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Traits/DatatableTrait.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/Traits/Datatable.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/adminlte.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/adminlte.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/ru/validation.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ru/validation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/vendor/adminlte/ru/menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/vendor/adminlte/ru/menu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,20 +182,21 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/lang/ru" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="terminal" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Docker\Weather" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="\\wsl$\Ubuntu\home\zubatik\weather\resources\views\admin\users" />
       <recent name="\\wsl$\Ubuntu\home\zubatik\weather\public\vendor\datatables\js" />
       <recent name="\\wsl$\Ubuntu\home\zubatik\weather\app\Services" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Docker\Weather\resources\lang\ru" />
+      <recent name="E:\Docker\Weather" />
     </key>
   </component>
   <component name="RunManager">
@@ -240,22 +246,30 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="556" y="308" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1606038942855" />
-    <state x="690" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605986339464">
+    <state x="724" y="342" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606041316312">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="690" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1605986339464" />
-    <state x="693" y="212" key="FileChooserDialogImpl" timestamp="1606039145894">
+    <state x="724" y="342" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1606041316312" />
+    <state x="693" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1606041866552">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="693" y="212" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1606039145894" />
-    <state x="706" y="263" key="NewPhpClassDialog" timestamp="1605985785024">
+    <state x="693" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1606041866552" />
+    <state x="690" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1606042988580">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="706" y="263" key="NewPhpClassDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1605985785024" />
-    <state x="794" y="463" key="NewPhpFileDialog" timestamp="1605985551541">
+    <state x="690" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1606042988580" />
+    <state x="693" y="212" key="FileChooserDialogImpl" timestamp="1606039939543">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="794" y="463" key="NewPhpFileDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1605985551541" />
+    <state x="693" y="212" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1606039939543" />
+    <state x="706" y="263" key="NewPhpClassDialog" timestamp="1606040534652">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="706" y="263" key="NewPhpClassDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1606040534652" />
+    <state x="794" y="463" key="NewPhpFileDialog" timestamp="1606041606313">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="794" y="463" key="NewPhpFileDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1606041606313" />
     <state x="461" y="185" key="SettingsEditor" timestamp="1606039160243">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -276,9 +290,9 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="615" y="250" key="run.anything.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1605976628997" />
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1606038976793">
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1606043729329">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1606038976793" />
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1606043729329" />
   </component>
 </project>

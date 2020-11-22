@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace App\Services\Traits;
 
 
-trait DatatableTrait
+trait Datatable
 {
     /** языковые переводы */
     protected string $translate = '';
