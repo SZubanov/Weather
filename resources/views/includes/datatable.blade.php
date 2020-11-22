@@ -5,7 +5,7 @@
        data-columns="{{ $jsonColumns ?? '' }}"
        data-search="{{ $tableSearchSelector ?? '#table-search' }}"
        data-filter="{{ $filterForm ?? '#datatable-form' }}"
-       width="100%">
+       style="width: 100%;">
     <thead>
     <tr>
         @if(isset($columns))

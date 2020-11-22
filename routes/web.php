@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Users\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,6 +16,11 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes();
 
-Route::get('/', function() {
-    return view('home');
-})->name('home')->middleware('auth');
+
+Route::group(['middleware' => ['auth']], function () {
+    Route::get('/', function() {
+        return view('home');
+    })->name('home');
+
+    Route::resource('users', UserController::class)->except(['show']);
+});
