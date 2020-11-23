@@ -26,3 +26,7 @@
 11. Опубликовать файлы <code>docker-compose exec php artisan storage:link</code>
 12. Проект доступен по адресу <code>https:\/\/localhost:8000</code>
 
+##Вход
+Для доступа к системе при запуске seeds генерируется тестовый пользователь.
+>Логин:  <code>user@weather.ru</code>
+>Пароль: <code>password</code>
