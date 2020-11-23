@@ -30,3 +30,7 @@
 Для доступа к системе при запуске seeds генерируется тестовый пользователь.
 >Логин:  <code>user@weather.ru</code>
 >Пароль: <code>password</code>
+
+## Погода
+1. Обновляется по указанным часам в настройках.
+2. Обновляется командой <code>docker-compose exec php artisan weather:get</code>
